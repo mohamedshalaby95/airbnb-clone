@@ -1,7 +1,7 @@
 import Header from "./header/header";
 import Banner from "./banner/banner";
 import '../index.css'
-import  Search  from "./search/search";
+//import  Search  from "./search/search";
 
 
 
@@ -33,7 +33,6 @@ return(
     
    
    
-    
     
     </div>
     
