@@ -1,12 +1,17 @@
 .heading{
  display: flex;
-
+ justify-content: space-around;
+ align-items: center;
+    
     background-color: white;
      box-shadow: 1px 1px 1px 1px white;
     height: 100px;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 100;
+    width: 100%;
+    
+    
 }
 
 .heading svg{
@@ -59,9 +64,28 @@
     height: 30px;
     width:30px
 }
+.heading2{
+    /* display: flex; */
+    
+
+   background-color: transparent;
+  
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;  
+    color:white !important;
+}
+.heading2 .box-content{
+    background-color: white;
+}
 @media screen and  (max-width:768px){
     .heading{
         display: none;
     
+    }
+    .heading2{
+        display: none;
     }
 }
