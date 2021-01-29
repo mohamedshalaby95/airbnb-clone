@@ -34,15 +34,12 @@ const Header=() =>{
       
        <div className=" d-flex right-side-header justify-content-center align-items-center">
          
-       <h4 className=" style-heading">become a hoist</h4>
-           <MdLanguage size="20px" className="m-3" />
-           <button className=" box-content d-flex  p-2  ">
-         
-              
-              
-               <MdList className=" ml-0" size="30px"/>
-               <img className=" d-inline rounded-circle img-fluid" src="images/logo.png" alt="profile-image" />
-           </button>
+       <h4 className="style-heading">Become a host</h4>
+            <MdLanguage size="20px" className="m-3" />
+            <button className=" box-content d-flex  p-2  ">     
+                <MdList className=" ml-0" size="30px"/>
+                <img className=" d-inline rounded-circle img-fluid" src="images/logo.png" alt="profile-image" />
+            </button>
        </div>
        
        </div>

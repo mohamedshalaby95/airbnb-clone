@@ -1,5 +1,5 @@
 
-import { BrowserRouter as Router, Route,NavLink as Link,Switch} from 'react-router-dom';
+import { BrowserRouter as Router, Route,Switch} from 'react-router-dom';
 import Home from './components/home';
 
 

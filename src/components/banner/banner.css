@@ -13,15 +13,12 @@
 
 
 }
-.caption{
-    
-   
+.caption{ 
     text-transform: capitalize;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 4rem;
     color: white;
     z-index: 99;
-    
     line-height: .8;
     font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
 }
