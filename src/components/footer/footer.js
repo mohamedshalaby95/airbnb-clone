@@ -5,7 +5,7 @@ import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
 import { MDBIcon } from 'mdbreact';
 
-function footer() {
+const Footer=() => {
     return (
         <div>
 
@@ -138,7 +138,7 @@ function footer() {
                 </div>
             </div>
 
-            <hr style={{width:"80%"}} ></hr>
+            <hr style={{width:"100%" }} ></hr>
             <div className="footer-container">
                 <div className='footer-privacy'>
                     <p> © 2021 Airbnb, Inc. All rights reserved </p>
@@ -173,4 +173,4 @@ function footer() {
     )
 }
 
-export default footer
+export default Footer

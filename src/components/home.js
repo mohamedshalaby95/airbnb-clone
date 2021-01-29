@@ -1,5 +1,6 @@
 import Header from "./header/header";
 import Banner from "./banner/banner";
+//import Footer from "./footer/footer";
 import '../index.css'
 //import  Search  from "./search/search";
 
@@ -28,6 +29,7 @@ return(
         <Banner />
         </div>
     </div>
+    
     
    
     
