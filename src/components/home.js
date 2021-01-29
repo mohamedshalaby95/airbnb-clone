@@ -1,7 +1,12 @@
 import Header from "./header/header";
 import Banner from "./banner/banner";
+//import Footer from "./footer/footer";
 import '../index.css'
+<<<<<<< HEAD
 
+=======
+//import  Search  from "./search/search";
+>>>>>>> c8b30166397679aa9dc09ee87434081d3cc68a0d
 
 
 
@@ -29,11 +34,11 @@ return(
         </div>
     </div>
     
+    
    
     
    
    
-    
     
     </div>
     

@@ -3,7 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "@material-ui/core": "^4.11.3",
+=======
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+>>>>>>> c8b30166397679aa9dc09ee87434081d3cc68a0d
     "@material-ui/icons": "^4.11.2",
     "@material-ui/utils": "^4.11.2",
     "@testing-library/jest-dom": "^5.11.8",
@@ -12,6 +17,7 @@
     "bootstrap": "^4.5.3",
     "date-fns": "^2.16.1",
     "jquery": "^3.5.1",
+    "mdbreact": "^5.0.1",
     "popper.js": "^1.16.1",
     "react": "^17.0.1",
     "react-date-range": "^1.1.3",
