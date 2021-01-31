@@ -19,3 +19,8 @@
   top:50%;
   left:10%;
 }
+
+.live-cards-section {
+  display: flex;
+  padding: 30px;
+}
