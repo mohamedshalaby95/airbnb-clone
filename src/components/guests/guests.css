@@ -28,11 +28,13 @@
     border-radius: 50% !important;
     height: 50px;
     width: 50px;
+    color: lightgray !important;
 }
 
 .remove:hover{
     background-color: white !important;
     cursor: not-allowed !important;
+    color: black !important;
 }
 .add{
     cursor: pointer !important;

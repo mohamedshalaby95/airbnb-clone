@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-import React , { useState } from 'react';
 import React , { useState,useEffect  } from 'react';
 import SearchDate from '../search-date/search-date.js';
 import './search.css'
@@ -11,6 +10,9 @@ const Search=() =>{
     const [showSearch, setShowSearch] = useState(false);
     const [show,setShow] = useState(false);
     const [showGuests, setShowGuests] = useState(false);
+    const [indate, setIndate] = useState('From');
+    const [endDate, setendDate] = useState('To');
+
  
     return(
         <div className="" > 

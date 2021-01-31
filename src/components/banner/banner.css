@@ -1,7 +1,6 @@
-<<<<<<< HEAD
-.caption {
 
-=======
+.caption {}
+
 .banner {
     /* height: 100vh; */
 
@@ -21,7 +20,6 @@
 .caption {
 
 
->>>>>>> 1b15100ff4871e203ea960f98f654be39083c8ff
     text-transform: capitalize;
     font-weight: 900;
     font-size: 4rem;
