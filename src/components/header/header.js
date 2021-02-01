@@ -1,10 +1,11 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import './header.css';
 import { FaSearch } from "react-icons/fa";
 import { MdLanguage } from "react-icons/md";
 import { MdList } from "react-icons/md";
 import React,{useState}  from "react";
 import Search from "../search/search";
-import BackToTop from "react-back-to-top-button";
+// import BackToTop from "react-back-to-top-button";
 
 // onClick={() =>{
 //     window.scrollTo(0,0) 

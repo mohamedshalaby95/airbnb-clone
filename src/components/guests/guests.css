@@ -1,7 +1,7 @@
 .guests{
     display: inline-block;
-    width: 30vw;
-    height: 40vh;
+    width: 35vw;
+    height: 47vh;
 }
 
 .p__style{
@@ -22,12 +22,12 @@
 }
 
 .remove{
-    margin: 10px;
+    margin: 5px;
     color: lightgray;
     border: 1px solid lightgray !important;
     border-radius: 50% !important;
     height: 50px;
-    width: 50px;
+    width: 30px;
     color: lightgray !important;
 }
 
@@ -37,11 +37,11 @@
 }
 .add{
     cursor: pointer !important;
-    margin: 10px;
+    margin: 5px;
     border: 1px solid lightgray !important;
     border-radius: 50% !important;
     height: 50px;
-    width: 50px;
+    width: 30px;
 }
 
 .add:hover{
