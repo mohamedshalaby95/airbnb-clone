@@ -12,6 +12,7 @@ const Search=() =>{
     const [showGuests, setShowGuests] = useState(false);
     const [indate, setIndate] = useState('From');
     const [endDate, setendDate] = useState('To');
+    
 
  
     return(
