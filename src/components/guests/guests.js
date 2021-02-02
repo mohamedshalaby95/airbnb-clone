@@ -1,13 +1,41 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
-import React from 'react'
+import React, {setState} from 'react'
 import './guests.css'
 import {Button } from '@material-ui/core'
 import AddIcon from '@material-ui/icons/Add';
 import RemoveIcon from '@material-ui/icons/Remove';
 
 
-function Guests(adval,chval,infval) {
+const Guests=(adval,chval,infval) => {
 
+    
+    let [guestNumbers , setGuestNumbers]=setState();
+    let [addGuestNumbers, setAddGuestNumbers]= setState("addNumber");
+    let [removeGuestNumbers, setRemoveGuestNumbers]= setState("removeNumber");
+
+    addGuests = () => {
+        console.log('clicked');
+        guestNumbers = 0
+        if ( guestNumbers<=0 && guestNumbers <=16 ) {
+            guestNumbers++;
+        }else{
+
+        }
+    }
+
+    removeGuests = () => {
+        console.log('clicked');
+        guestNumbers = 0
+        if ( guestNumbers > 0 ) {
+            guestNumbers--;
+        }else{
+
+        }
+
+    }
+
+        
     return (
         <div className="guests justify-content-center p-4">
             <div className="guests__adults d-flex">
@@ -16,9 +44,10 @@ function Guests(adval,chval,infval) {
                     <p className="p__style">Ages 13 or above</p>
                 </div>
                     <p className="guests__width  m-2">
-                        <Button className="remove"> <RemoveIcon/> </Button>
-                        <span   value={adval} className="span__style"> 0 </span>
-                        <Button className="add" > <AddIcon/> </Button>
+                        <Button className="remove" onClick={removeGuests}> <RemoveIcon/> </Button>
+                        <span   value={adval} className="span__style" onChange={this.state.guestnumbers}> {guestNumbers}</span>
+                        {/* onChange={e => setendDate(SearchDate.selectionRange.endDate)} */}
+                        <Button className="add" onClick={addGuests}> <AddIcon/> </Button>
                     </p>
             </div>
             <div className="guests__children d-flex">
@@ -28,7 +57,7 @@ function Guests(adval,chval,infval) {
                 </div>
                 <p className="guests__width   m-2">
                     <Button className="remove"> <RemoveIcon/> </Button>
-                    <span value={chval} className="span__style "> 0 </span>
+                    <span value={chval} className="span__style "> {guestNumbers} </span>
                     <Button className="add" > <AddIcon/>  </Button>
                 </p>
             </div>
@@ -39,7 +68,7 @@ function Guests(adval,chval,infval) {
                 </div>
                 <p className="guests__width  m-3">
                     <Button className="remove"> <RemoveIcon/> </Button>
-                    <span value={infval} placeholder="0" className="span__style"> 0 </span>
+                    <span value={infval} placeholder="0" className="span__style"> {guestNumbers} </span>
                     <Button className="add" > <AddIcon/> </Button>
                 </p>
             </div>

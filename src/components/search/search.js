@@ -42,10 +42,10 @@ const Search=() =>{
                 <div className="caption-search-inf caption-search-inf-guests d-flex justify-content-between align-items-lg-center ">
                     <div onClick={()=>setShowGuests(!show)} >
                         <div className="guests__show" >
-                        {showGuests && <Guests/>}    
+                        {showGuests && <Guests />}    
                         </div>
                         <p>Guest</p>
-                        <input className="border-0 p-1" type="text"  placeholder="Add guest" />
+                        <input className="border-0 p-1" type="text"  placeholder="Add guest" onClick={setShowGuests((!showGuests))}  />
                     </div>
                     <div className="divSearch">
                         <FaSearch className='Search' size="20px" color="#ffffff"/>
