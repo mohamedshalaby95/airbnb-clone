@@ -43,8 +43,8 @@ const Guests=() => {
                     <p className="p__style">Ages 13 or above</p>
                 </div>
                     <p className="guests__width  m-2">
-                        <Button className="remove" onClick={addRemoveGuests} Disabled> <RemoveIcon/> </Button>
-                        <input   value={guestNumbers} className="input__style" onChange={this.state.addRemoveGuests} /> 
+                        <Button className="remove" onClick={addRemoveGuests} > <RemoveIcon/> </Button>
+                        <input   value={guestNumbers} defaultValue="0" className="input__style" onChange={this.addRemoveGuests} /> 
                         {/* onChange={e => setendDate(SearchDate.selectionRange.endDate)} */}
                         <Button className="add" onClick={addRemoveGuests}> <AddIcon/> </Button>
                     </p>
