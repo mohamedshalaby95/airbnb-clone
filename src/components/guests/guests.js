@@ -44,8 +44,8 @@ const Guests=(adval,chval,infval) => {
                     <p className="p__style">Ages 13 or above</p>
                 </div>
                     <p className="guests__width  m-2">
-                        <Button className="remove" onClick={removeGuests}> <RemoveIcon/> </Button>
-                        <span   value={adval} className="span__style" onChange={this.state.guestnumbers}> {guestNumbers}</span>
+                        <Button className="remove" onClick={removeGuests} Disabled> <RemoveIcon/> </Button>
+                        <input   value={guestNumbers} className="input__style" onChange={this.state.guestnumbers} /> 
                         {/* onChange={e => setendDate(SearchDate.selectionRange.endDate)} */}
                         <Button className="add" onClick={addGuests}> <AddIcon/> </Button>
                     </p>
@@ -57,7 +57,7 @@ const Guests=(adval,chval,infval) => {
                 </div>
                 <p className="guests__width   m-2">
                     <Button className="remove"> <RemoveIcon/> </Button>
-                    <span value={chval} className="span__style "> {guestNumbers} </span>
+                    <input value={guestNumbers} className="input__style " onChange={this.state.guestnumbers} /> 
                     <Button className="add" > <AddIcon/>  </Button>
                 </p>
             </div>
@@ -68,7 +68,7 @@ const Guests=(adval,chval,infval) => {
                 </div>
                 <p className="guests__width  m-3">
                     <Button className="remove"> <RemoveIcon/> </Button>
-                    <span value={infval} placeholder="0" className="span__style"> {guestNumbers} </span>
+                    <input value={guestNumbers} placeholder="0" className="input__style" onChange={this.state.guestnumbers} /> 
                     <Button className="add" > <AddIcon/> </Button>
                 </p>
             </div>
