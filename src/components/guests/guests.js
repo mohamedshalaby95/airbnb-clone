@@ -1,38 +1,37 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
-import React, {setState} from 'react'
+import React, {useState} from 'react'
 import './guests.css'
 import {Button } from '@material-ui/core'
 import AddIcon from '@material-ui/icons/Add';
 import RemoveIcon from '@material-ui/icons/Remove';
 
 
-const Guests=(adval,chval,infval) => {
+const Guests=() => {
 
     
-    let [guestNumbers , setGuestNumbers]=setState();
-    let [addGuestNumbers, setAddGuestNumbers]= setState("addNumber");
-    let [removeGuestNumbers, setRemoveGuestNumbers]= setState("removeNumber");
+    let [guestNumbers , setGuestNumbers]=useState();
+    // let [addGuestNumbers, setAddGuestNumbers]= setState("addNumber");
+    // let [removeGuestNumbers, setRemoveGuestNumbers]= setState("removeNumber");
 
-    addGuests = () => {
-        console.log('clicked');
-        guestNumbers = 0
-        if ( guestNumbers<=0 && guestNumbers <=16 ) {
+    guestNumbers = 0
+   let addRemoveGuests = (e) => {
+        if ( guestNumbers <=16 ) {
+            document.getElementsByClassName("remove").preventDefault();
             guestNumbers++;
-        }else{
+            this.setGuestNumbers({
+                guestNumbers: e.target.value
+            });
 
-        }
-    }
-
-    removeGuests = () => {
-        console.log('clicked');
-        guestNumbers = 0
-        if ( guestNumbers > 0 ) {
+            console.log('clicked');
+        }else if( guestNumbers > 0 ){
+            document.getElementsByClassName("add").preventDefault();
             guestNumbers--;
-        }else{
-
+            this.setGuestNumbers({
+            guestNumbers: e.target.value
+        })
+        console.log('clicked');
         }
-
     }
 
         
@@ -44,10 +43,10 @@ const Guests=(adval,chval,infval) => {
                     <p className="p__style">Ages 13 or above</p>
                 </div>
                     <p className="guests__width  m-2">
-                        <Button className="remove" onClick={removeGuests} Disabled> <RemoveIcon/> </Button>
-                        <input   value={guestNumbers} className="input__style" onChange={this.state.guestnumbers} /> 
+                        <Button className="remove" onClick={addRemoveGuests} Disabled> <RemoveIcon/> </Button>
+                        <input   value={guestNumbers} className="input__style" onChange={this.state.addRemoveGuests} /> 
                         {/* onChange={e => setendDate(SearchDate.selectionRange.endDate)} */}
-                        <Button className="add" onClick={addGuests}> <AddIcon/> </Button>
+                        <Button className="add" onClick={addRemoveGuests}> <AddIcon/> </Button>
                     </p>
             </div>
             <div className="guests__children d-flex">
@@ -56,9 +55,9 @@ const Guests=(adval,chval,infval) => {
                 <p className="p__style">Ages 2-12</p>
                 </div>
                 <p className="guests__width   m-2">
-                    <Button className="remove"> <RemoveIcon/> </Button>
-                    <input value={guestNumbers} className="input__style " onChange={this.state.guestnumbers} /> 
-                    <Button className="add" > <AddIcon/>  </Button>
+                    <Button className="remove" onClick={addRemoveGuests} > <RemoveIcon/> </Button>
+                    <input value={guestNumbers} className="input__style " onChange={this.addRemoveGuests} /> 
+                    <Button className="add" onClick={addRemoveGuests} > <AddIcon/>  </Button>
                 </p>
             </div>
             <div className="gustes__infants d-flex">
@@ -67,9 +66,9 @@ const Guests=(adval,chval,infval) => {
                     <p className="p__style">Under 2</p>
                 </div>
                 <p className="guests__width  m-3">
-                    <Button className="remove"> <RemoveIcon/> </Button>
-                    <input value={guestNumbers} placeholder="0" className="input__style" onChange={this.state.guestnumbers} /> 
-                    <Button className="add" > <AddIcon/> </Button>
+                    <Button className="remove" onClick={addRemoveGuests} > <RemoveIcon/> </Button>
+                    <input value={guestNumbers} placeholder="0" className="input__style" onChange={this.addRemoveGuests} /> 
+                    <Button className="add" onClick={addRemoveGuests} > <AddIcon/> </Button>
                 </p>
             </div>
         </div>

@@ -15,6 +15,8 @@ const Search=() =>{
     const [showGuests, setShowGuests] = useState(false);
     const [indate, setIndate] = useState('From');
     const [endDate, setendDate] = useState('To');
+    let [guestNumbers , setGuestNumbers]=useState();
+
     let locationref=useRef();
     let guestref=useRef();
     let history = useHistory();
@@ -51,7 +53,7 @@ const Search=() =>{
                         {showGuests && <Guests/>}    
                         </div>
                         <p>Guest</p>
-                        <input className="border-0 p-1" type="text"  placeholder="Add guest" />
+                        <input className="border-0 p-1" type="text"  placeholder="Add guest" onChange={e => setGuestNumbers(guestNumbers.target.value)} />
                     </div>
                     <div className="divSearch">
                         <FaSearch onClick={() =>{
